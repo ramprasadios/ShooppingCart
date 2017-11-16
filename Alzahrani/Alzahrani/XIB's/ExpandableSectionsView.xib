@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ExpandableSectionsView" id="iN0-l3-epB" customClass="ExpandableSectionsView" customModule="Alzahrani" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clothings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUw-Qc-Oqs">
+                    <rect key="frame" x="8" y="14" width="62" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqO-DZ-wsF">
+                    <rect key="frame" x="297" y="12.5" width="15" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="3ci-DV-6gH"/>
+                        <constraint firstAttribute="height" constant="20" id="aWq-Ea-TOA"/>
+                    </constraints>
+                    <state key="normal" image="right_arrow_icon"/>
+                    <connections>
+                        <action selector="expandCurrentSectionTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="O4Q-Ij-MP1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eqO-DZ-wsF" firstAttribute="centerY" secondItem="dUw-Qc-Oqs" secondAttribute="centerY" id="01h-nQ-6Sl"/>
+                <constraint firstItem="dUw-Qc-Oqs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1bM-03-pLX"/>
+                <constraint firstAttribute="trailing" secondItem="eqO-DZ-wsF" secondAttribute="trailing" constant="8" id="eVc-RE-6d3"/>
+                <constraint firstItem="eqO-DZ-wsF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dUw-Qc-Oqs" secondAttribute="trailing" constant="8" id="p5j-SB-Jx2"/>
+                <constraint firstItem="dUw-Qc-Oqs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="vbH-Xw-eI9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="moreButton" destination="eqO-DZ-wsF" id="TSc-2w-uQj"/>
+                <outlet property="subCategoryName" destination="dUw-Qc-Oqs" id="tsj-0F-RF6"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="right_arrow_icon" width="60" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8qH-l8-0FM"; */
+"8qH-l8-0FM.text" = "Label";
+
+/* Class = "UILabel"; text = "In case of deposit, please contact us and provide us with a copy of the transfer and order number."; ObjectID = "LyZ-9e-B29"; */
+"LyZ-9e-B29.text" = "In case of deposit, please contact us and provide us with a copy of the transfer and order number.";
+
+/* Class = "UILabel"; text = "we will confirm your order once we get confirmation about bank transfer ."; ObjectID = "Mue-TZ-gH9"; */
+"Mue-TZ-gH9.text" = "we will confirm your order once we get confirmation about bank transfer .";
+
+/* Class = "UILabel"; text = "Bank Transfer Instructions"; ObjectID = "j6k-Fv-cp5"; */
+"j6k-Fv-cp5.text" = "Bank Transfer Instructions";

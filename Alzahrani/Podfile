@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+
+target 'Alzahrani' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+use_frameworks!
+
+pod 'Alamofire', '>= 4.0'
+pod 'MagicalRecord'
+pod 'AlamofireImage', '~> 3.1'
+pod 'OneSignal', '>= 2.5.2', '< 3.0'
+pod 'Localize-Swift', '~> 1.7'
+pod 'Branch'
+  # Pods for Alzahrani
+
+  target 'AlzahraniTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AlzahraniUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AlzahraniOneSignalPushNotificaitonService' do
+    pod 'OneSignal', '>= 2.5.2', '< 3.0'
+  end
+
+end

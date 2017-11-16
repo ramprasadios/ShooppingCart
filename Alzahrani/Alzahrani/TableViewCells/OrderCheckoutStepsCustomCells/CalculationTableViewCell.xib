@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CalculationTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalculationTableViewCell" rowHeight="42" id="rFA-go-qqj" userLabel="CalculationTableViewCell" customClass="CalculationTableViewCell" customModule="Alzahrani" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rFA-go-qqj" id="dY8-y0-5MV">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="41"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZz-Du-mhB">
+                        <rect key="frame" x="8" y="0.0" width="80" height="41"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="JzG-P7-iuF"/>
+                            <constraint firstAttribute="height" constant="41" id="p9s-ZC-L9T"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <mask key="constraints">
+                                <exclude reference="JzG-P7-iuF"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abn-K8-ct8">
+                        <rect key="frame" x="177" y="0.0" width="68.5" height="41"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="CLj-Nj-9c0"/>
+                            <constraint firstAttribute="width" constant="50" id="tTM-OC-Cyb">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tTM-OC-Cyb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <mask key="constraints">
+                                <include reference="tTM-OC-Cyb"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="900" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKK-hf-gjp">
+                        <rect key="frame" x="329.5" y="0.0" width="68.5" height="41"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="cGr-Nm-2du">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="41" id="ePA-Wm-Brp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cGr-Nm-2du"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <mask key="constraints">
+                                <include reference="cGr-Nm-2du"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="JKk-ra-Qsa">
+                        <rect key="frame" x="253.5" y="0.0" width="68" height="41"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="s9E-yL-jl4">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="41" id="xa7-P0-jAm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="s9E-yL-jl4"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <mask key="constraints">
+                                <include reference="s9E-yL-jl4"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdX-OB-RbJ">
+                        <rect key="frame" x="96" y="0.0" width="80" height="41"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="kZg-J3-YtL"/>
+                            <constraint firstAttribute="height" constant="41" id="tpA-hh-Fe3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <mask key="constraints">
+                                <exclude reference="kZg-J3-YtL"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="vdX-OB-RbJ" firstAttribute="leading" secondItem="rZz-Du-mhB" secondAttribute="trailing" constant="8" id="4ug-I2-beF"/>
+                    <constraint firstItem="abn-K8-ct8" firstAttribute="leading" secondItem="vdX-OB-RbJ" secondAttribute="trailing" constant="1" id="7Aq-2Y-yPm"/>
+                    <constraint firstAttribute="bottom" secondItem="uKK-hf-gjp" secondAttribute="bottom" id="8KX-l8-H3E"/>
+                    <constraint firstItem="vdX-OB-RbJ" firstAttribute="bottom" secondItem="rZz-Du-mhB" secondAttribute="bottom" id="CBy-Lj-Hrs"/>
+                    <constraint firstAttribute="bottom" secondItem="rZz-Du-mhB" secondAttribute="bottom" id="FFv-Wl-3tR"/>
+                    <constraint firstItem="abn-K8-ct8" firstAttribute="bottom" secondItem="vdX-OB-RbJ" secondAttribute="bottom" id="GUr-fR-dXc"/>
+                    <constraint firstItem="JKk-ra-Qsa" firstAttribute="bottom" secondItem="abn-K8-ct8" secondAttribute="bottom" id="JPJ-2g-VlH"/>
+                    <constraint firstItem="vdX-OB-RbJ" firstAttribute="width" secondItem="rZz-Du-mhB" secondAttribute="width" id="Qyt-s3-cvv"/>
+                    <constraint firstItem="uKK-hf-gjp" firstAttribute="width" secondItem="abn-K8-ct8" secondAttribute="width" id="Sn7-th-2bh"/>
+                    <constraint firstItem="rZz-Du-mhB" firstAttribute="leading" secondItem="dY8-y0-5MV" secondAttribute="leading" constant="8" id="cIe-Wd-YaF"/>
+                    <constraint firstItem="JKk-ra-Qsa" firstAttribute="width" secondItem="abn-K8-ct8" secondAttribute="width" id="jst-68-nwY"/>
+                    <constraint firstItem="rZz-Du-mhB" firstAttribute="top" secondItem="dY8-y0-5MV" secondAttribute="top" id="k29-ul-TwA"/>
+                    <constraint firstItem="uKK-hf-gjp" firstAttribute="leading" secondItem="JKk-ra-Qsa" secondAttribute="trailing" constant="8" id="kxw-w2-EEg"/>
+                    <constraint firstItem="JKk-ra-Qsa" firstAttribute="leading" secondItem="abn-K8-ct8" secondAttribute="trailing" constant="8" id="mHb-gq-gwg"/>
+                    <constraint firstItem="uKK-hf-gjp" firstAttribute="top" secondItem="dY8-y0-5MV" secondAttribute="top" id="n8c-A6-and"/>
+                    <constraint firstItem="abn-K8-ct8" firstAttribute="top" secondItem="vdX-OB-RbJ" secondAttribute="top" id="pb9-9T-QLI"/>
+                    <constraint firstItem="vdX-OB-RbJ" firstAttribute="top" secondItem="rZz-Du-mhB" secondAttribute="top" id="wF6-GT-alJ"/>
+                    <constraint firstItem="JKk-ra-Qsa" firstAttribute="top" secondItem="abn-K8-ct8" secondAttribute="top" id="yyX-eK-o78"/>
+                    <constraint firstAttribute="trailing" secondItem="uKK-hf-gjp" secondAttribute="trailing" constant="8" id="zrM-I9-jPk"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Qyt-s3-cvv"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=regular">
+                    <mask key="constraints">
+                        <include reference="Qyt-s3-cvv"/>
+                        <exclude reference="jst-68-nwY"/>
+                        <exclude reference="Sn7-th-2bh"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="productModelLabel" destination="vdX-OB-RbJ" id="qpa-Q4-7un"/>
+                <outlet property="productNameLabel" destination="rZz-Du-mhB" id="2Mp-sL-uiC"/>
+                <outlet property="productQtyLabel" destination="abn-K8-ct8" id="ojl-en-qeq"/>
+                <outlet property="productTotalPriceLabel" destination="uKK-hf-gjp" id="Z0l-jQ-IAa"/>
+                <outlet property="productUnitPriceLabel" destination="JKk-ra-Qsa" id="RY1-Q0-xoi"/>
+            </connections>
+            <point key="canvasLocation" x="-56" y="79"/>
+        </tableViewCell>
+    </objects>
+</document>

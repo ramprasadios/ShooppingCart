@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "QCa-NF-LJL"; */
+"QCa-NF-LJL.normalTitle" = "استمر";
+
+/* Class = "UILabel"; text = "I have read and agree to the"; ObjectID = "Qj6-vV-8Tf"; */
+"Qj6-vV-8Tf.text" = "لقد قرات ووافقت على ال";
+
+/* Class = "UILabel"; text = "Add Comments About Your Order"; ObjectID = "nqT-8a-Cs8"; */
+"nqT-8a-Cs8.text" = "كتابة ملاحظات مع الطلب.";
+
+/* Class = "UIButton"; normalTitle = "Product Return Policy"; ObjectID = "o5v-P7-SQv"; */
+"o5v-P7-SQv.normalTitle" = "المنتج عودة السياسة";

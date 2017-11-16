@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "3"; ObjectID = "AJi-aa-LbI"; */
+"AJi-aa-LbI.text" = "Quantity";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "H1U-7O-GTU"; */
+"H1U-7O-GTU.text" = "Product Name";
+
+/* Class = "UILabel"; text = "Model"; ObjectID = "Jh0-Qq-3Ay"; */
+"Jh0-Qq-3Ay.text" = "Model";
+
+/* Class = "UILabel"; text = "900"; ObjectID = "nH5-40-a3n"; */
+"nH5-40-a3n.text" = "Total";
+
+/* Class = "UILabel"; text = "300"; ObjectID = "vl8-VK-tyR"; */
+"vl8-VK-tyR.text" = "Unit Price";

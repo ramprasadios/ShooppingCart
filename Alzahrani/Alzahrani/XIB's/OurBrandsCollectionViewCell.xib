@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="OurBrandsCollectionViewCell" reuseIdentifier="OurBrandsCollectionViewCell" id="gTV-IL-0wX" customClass="OurBrandsCollectionViewCell" customModule="Alzahrani" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3fM-fo-mKh">
+                        <rect key="frame" x="0.0" y="15" width="175" height="120"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="84" id="M9J-ZT-Aqe"/>
+                            <constraint firstAttribute="height" constant="120" id="YK4-sR-OW5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YK4-sR-OW5"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="M9J-ZT-Aqe"/>
+                                <include reference="YK4-sR-OW5"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3fM-fo-mKh" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="2yB-6M-75D"/>
+                <constraint firstItem="3fM-fo-mKh" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="cZp-ji-ArW"/>
+                <constraint firstItem="3fM-fo-mKh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="o0h-eb-Je7"/>
+                <constraint firstAttribute="trailing" secondItem="3fM-fo-mKh" secondAttribute="trailing" id="xOW-Q0-yyu"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="6"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2yB-6M-75D"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="2yB-6M-75D"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="ourBrandsImageView" destination="3fM-fo-mKh" id="nzH-uO-HR5"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="63.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

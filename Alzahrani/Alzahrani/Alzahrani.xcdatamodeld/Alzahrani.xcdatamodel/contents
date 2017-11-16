@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Address" representedClassName=".Address" syncable="YES">
+        <attribute name="address1" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="address_1"/>
+            </userInfo>
+        </attribute>
+        <attribute name="address2" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="address_2"/>
+            </userInfo>
+        </attribute>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="city"/>
+            </userInfo>
+        </attribute>
+        <attribute name="company" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="company"/>
+            </userInfo>
+        </attribute>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="country"/>
+            </userInfo>
+        </attribute>
+        <attribute name="countryId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="country_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="firstname"/>
+            </userInfo>
+        </attribute>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="lastname"/>
+            </userInfo>
+        </attribute>
+        <attribute name="postCode" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="postcode"/>
+            </userInfo>
+        </attribute>
+        <attribute name="zoneCode" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKayName" value="zone_code"/>
+            </userInfo>
+        </attribute>
+        <attribute name="zoneId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="zone_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="zoneName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="zone"/>
+            </userInfo>
+        </attribute>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="address" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Banners" representedClassName=".Banners" syncable="YES">
+        <attribute name="categoryId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="imageData"/>
+            </userInfo>
+        </attribute>
+        <attribute name="menuType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Brands" representedClassName=".Brands" syncable="YES">
+        <attribute name="brandImage" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="brandImageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="imageData"/>
+            </userInfo>
+        </attribute>
+        <attribute name="brandName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="categoryId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="category_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="manufactureId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="manufacturer_id"/>
+            </userInfo>
+        </attribute>
+        <userInfo>
+            <entry key="mappedKeyName" value="image"/>
+        </userInfo>
+    </entity>
+    <entity name="BrandsCategory" representedClassName=".BrandsCategory" syncable="YES">
+        <attribute name="categoryId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="category_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="manufactureId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="manufacturer_id"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <entity name="HomeProducts" representedClassName=".HomeProducts" syncable="YES">
+        <attribute name="sectionName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="section_title"/>
+            </userInfo>
+        </attribute>
+        <relationship name="sections" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sections" inverseName="homeProducts" inverseEntity="Sections" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="homeProductsSectionDict"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="MyCart" representedClassName=".MyCart" syncable="YES">
+        <attribute name="cartId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="cart_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="cartTotalPrice" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="total_cart_price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="maxQuantity" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="maximum_quantity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="minQuantity" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="minimum_quantity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="product_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productImage" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="thumb"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productsCount" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="quantity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="quantity" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="product_quantity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalPrice" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="total"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <entity name="NestedSubCategory" representedClassName=".NestedSubCategory" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nestedCategoryId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="category_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="parent_id"/>
+            </userInfo>
+        </attribute>
+        <userInfo>
+            <entry key="mappedKeyName" value="parent_id"/>
+        </userInfo>
+    </entity>
+    <entity name="NewArrival" representedClassName=".NewArrival" syncable="YES">
+        <attribute name="arDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="ardescription"/>
+            </userInfo>
+        </attribute>
+        <attribute name="arName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="arname"/>
+            </userInfo>
+        </attribute>
+        <attribute name="availability" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="quantity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="isInCart" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="cart_status"/>
+            </userInfo>
+        </attribute>
+        <attribute name="isProductLiked" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="liked"/>
+            </userInfo>
+        </attribute>
+        <attribute name="maxQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="maximum"/>
+            </userInfo>
+        </attribute>
+        <attribute name="minQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="minimum"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="prodDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productCode" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="sku"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="product_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productImage" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="reviews" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="reviews"/>
+            </userInfo>
+        </attribute>
+        <attribute name="soldQuantity" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="sold_quantity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="specialPrice" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="special"/>
+            </userInfo>
+        </attribute>
+        <attribute name="stockStatus" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="stock_status"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <entity name="OfferZone" representedClassName=".OfferZone" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="linkId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="categoryId"/>
+            </userInfo>
+        </attribute>
+        <attribute name="menuType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="prodName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <userInfo>
+            <entry key="mappedKeyName" value="imageData"/>
+        </userInfo>
+    </entity>
+    <entity name="OfflineProducts" representedClassName=".OfflineProducts" syncable="YES">
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="product_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="quantity" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="quantity"/>
+            </userInfo>
+        </attribute>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Orders" inverseName="offlineProduct" inverseEntity="Orders" syncable="YES"/>
+    </entity>
+    <entity name="Orders" representedClassName=".Orders" syncable="YES">
+        <attribute name="offlineOrder" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="offline_order"/>
+            </userInfo>
+        </attribute>
+        <relationship name="offlineProduct" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OfflineProducts" inverseName="order" inverseEntity="OfflineProducts" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="OfflineProducts"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="Product" representedClassName=".Product" syncable="YES">
+        <attribute name="arDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="ardescription"/>
+            </userInfo>
+        </attribute>
+        <attribute name="arName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="arname"/>
+            </userInfo>
+        </attribute>
+        <attribute name="arStockStatus" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="arstock_status"/>
+            </userInfo>
+        </attribute>
+        <attribute name="availability" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="quantity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" storedInTruthFile="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="imageData"/>
+            </userInfo>
+        </attribute>
+        <attribute name="isInCart" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="cart_status"/>
+            </userInfo>
+        </attribute>
+        <attribute name="isProductLiked" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="liked"/>
+            </userInfo>
+        </attribute>
+        <attribute name="manufacturerId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="manufacturer_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="maxQuanity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="maximum"/>
+            </userInfo>
+        </attribute>
+        <attribute name="minQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="minimum"/>
+            </userInfo>
+        </attribute>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="model"/>
+            </userInfo>
+        </attribute>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="prodCategoryId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="cat_id.category_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="product_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productViewedCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="viewed"/>
+            </userInfo>
+        </attribute>
+        <attribute name="reviews" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="reviews"/>
+            </userInfo>
+        </attribute>
+        <attribute name="soldQuantity" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="sold_quantity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="specialPrice" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="special"/>
+            </userInfo>
+        </attribute>
+        <attribute name="stockStatus" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="stock_status"/>
+            </userInfo>
+        </attribute>
+        <attribute name="stockStatusId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="stock_status_id"/>
+            </userInfo>
+        </attribute>
+        <relationship name="section" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="section" inverseEntity="Product" syncable="YES"/>
+        <relationship name="specifications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Specifications" inverseName="product" inverseEntity="Specifications" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="SpecificationsDict"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="ProductCategory" representedClassName=".ProductCategory" syncable="YES">
+        <attribute name="categoryId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="category_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="imageData"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <relationship name="subCategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SubCategories" inverseName="productCategory" inverseEntity="SubCategories" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="subCatId"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="mappedKeyName" value="image"/>
+            <entry key="relatedByAttribute" value="catId"/>
+        </userInfo>
+    </entity>
+    <entity name="Sections" representedClassName=".Sections" syncable="YES">
+        <attribute name="sectionName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="section_title"/>
+            </userInfo>
+        </attribute>
+        <relationship name="homeProducts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HomeProducts" inverseName="sections" inverseEntity="HomeProducts" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="Specifications" representedClassName=".Specifications" syncable="YES">
+        <attribute name="arDetail" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="arText"/>
+            </userInfo>
+        </attribute>
+        <attribute name="arTitle" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="arName"/>
+            </userInfo>
+        </attribute>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="enText"/>
+            </userInfo>
+        </attribute>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="enName"/>
+            </userInfo>
+        </attribute>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="specifications" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="SubCategories" representedClassName=".SubCategories" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="parent_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="subCategoryId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="category_id"/>
+            </userInfo>
+        </attribute>
+        <relationship name="productCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductCategory" inverseName="subCategories" inverseEntity="ProductCategory" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="catId"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="mappedKeyName" value="category_id"/>
+            <entry key="relatedByAttribute" value="subCatId"/>
+        </userInfo>
+    </entity>
+    <entity name="TopSelling" representedClassName=".TopSelling" syncable="YES">
+        <attribute name="arDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="ardescription"/>
+            </userInfo>
+        </attribute>
+        <attribute name="arName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="arname"/>
+            </userInfo>
+        </attribute>
+        <attribute name="availability" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="quantity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="isInCart" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="cart_status"/>
+            </userInfo>
+        </attribute>
+        <attribute name="isProductLiked" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="liked"/>
+            </userInfo>
+        </attribute>
+        <attribute name="maxQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="maximum"/>
+            </userInfo>
+        </attribute>
+        <attribute name="minQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="minimum"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productCode" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="sku"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productid" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="product_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productImage" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="reviews" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="reviews"/>
+            </userInfo>
+        </attribute>
+        <attribute name="soldQuantity" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="sold_quantity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="specialPrice" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="special"/>
+            </userInfo>
+        </attribute>
+        <attribute name="stockStatus" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="stock_status"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <entity name="User" representedClassName=".User" syncable="YES">
+        <attribute name="depertment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailAddress" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="email"/>
+            </userInfo>
+        </attribute>
+        <attribute name="employeeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="firstname"/>
+            </userInfo>
+        </attribute>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="lastname"/>
+            </userInfo>
+        </attribute>
+        <attribute name="telephone" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="telephone"/>
+            </userInfo>
+        </attribute>
+        <relationship name="address" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Address" inverseName="user" inverseEntity="Address" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="UserAddressDict"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="WishLists" representedClassName=".WishLists" syncable="YES">
+        <attribute name="arName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="arname"/>
+            </userInfo>
+        </attribute>
+        <attribute name="availability" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="product_quantity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="image" optional="YES" attributeType="String" allowsExternalBinaryDataStorage="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="thumb"/>
+            </userInfo>
+        </attribute>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productDesc" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="desc"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="product_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="specialPrice" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="special"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <elements>
+        <element name="Address" positionX="-522" positionY="-189" width="128" height="240"/>
+        <element name="Banners" positionX="-36" positionY="108" width="128" height="135"/>
+        <element name="Brands" positionX="-29" positionY="-90" width="128" height="120"/>
+        <element name="BrandsCategory" positionX="-549" positionY="-207" width="128" height="75"/>
+        <element name="HomeProducts" positionX="-54" positionY="549" width="128" height="75"/>
+        <element name="MyCart" positionX="-38" positionY="270" width="128" height="210"/>
+        <element name="NestedSubCategory" positionX="-180" positionY="-72" width="128" height="90"/>
+        <element name="NewArrival" positionX="-747" positionY="495" width="128" height="300"/>
+        <element name="OfferZone" positionX="-414" positionY="495" width="128" height="135"/>
+        <element name="OfflineProducts" positionX="-729" positionY="-171" width="128" height="90"/>
+        <element name="Orders" positionX="-711" positionY="15" width="128" height="75"/>
+        <element name="Product" positionX="124" positionY="-171" width="128" height="420"/>
+        <element name="ProductCategory" positionX="-353" positionY="-126" width="128" height="118"/>
+        <element name="Sections" positionX="-488" positionY="306" width="128" height="90"/>
+        <element name="SubCategories" positionX="-180" positionY="-216" width="128" height="105"/>
+        <element name="TopSelling" positionX="-299" positionY="45" width="128" height="300"/>
+        <element name="User" positionX="-362" positionY="-351" width="128" height="150"/>
+        <element name="WishLists" positionX="-486" positionY="108" width="128" height="165"/>
+        <element name="Specifications" positionX="-549" positionY="-207" width="128" height="120"/>
+    </elements>
+</model>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProductSpecificationHeaderView" id="iN0-l3-epB" customClass="ProductSpecificationHeaderView" customModule="Alzahrani" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCU-ze-MTX">
+                    <rect key="frame" x="8" y="0.0" width="100" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="AaT-TO-FSC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXV-Pn-TXU">
+                    <rect key="frame" x="116" y="0.0" width="204" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iCU-ze-MTX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="KJJ-u8-cVy"/>
+                <constraint firstAttribute="trailing" secondItem="OXV-Pn-TXU" secondAttribute="trailing" id="PPd-rZ-a6F"/>
+                <constraint firstAttribute="bottom" secondItem="iCU-ze-MTX" secondAttribute="bottom" id="Xkz-6V-h2k"/>
+                <constraint firstItem="iCU-ze-MTX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cmP-Hv-XQx"/>
+                <constraint firstItem="OXV-Pn-TXU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f9G-9E-8oW"/>
+                <constraint firstItem="OXV-Pn-TXU" firstAttribute="leading" secondItem="iCU-ze-MTX" secondAttribute="trailing" constant="8" id="qWj-0v-2Bg"/>
+                <constraint firstAttribute="bottom" secondItem="OXV-Pn-TXU" secondAttribute="bottom" id="vsm-aP-anf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33" y="49"/>
+        </view>
+    </objects>
+</document>

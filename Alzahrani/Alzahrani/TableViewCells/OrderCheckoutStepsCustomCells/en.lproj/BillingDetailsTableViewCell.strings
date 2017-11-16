@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "I want to use a new address"; ObjectID = "d1O-0W-3YD"; */
+"d1O-0W-3YD.text" = "I want to use a new address";
+
+/* Class = "UILabel"; text = "I want to use an existing address"; ObjectID = "iN0-9c-WXn"; */
+"iN0-9c-WXn.text" = "I want to use an existing address";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "qnY-j7-jW7"; */
+"qnY-j7-jW7.normalTitle" = "Continue";

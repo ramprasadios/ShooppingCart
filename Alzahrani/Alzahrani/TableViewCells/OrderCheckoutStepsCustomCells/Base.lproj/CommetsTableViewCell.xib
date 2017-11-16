@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CommetsTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommetsTableViewCell" rowHeight="178" id="KGk-i7-Jjw" customClass="CommetsTableViewCell" customModule="Alzahrani" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Comments About Your Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqT-8a-Cs8">
+                        <rect key="frame" x="8" y="8" width="238.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                        </variation>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="guJ-u6-jgl">
+                        <rect key="frame" x="8" y="34" width="304" height="70"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="1CI-bX-jNt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        </variation>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="KiM-Kq-Gfp"/>
+                        </connections>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCa-NF-LJL">
+                        <rect key="frame" x="212" y="181.5" width="100" height="30"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="OvP-CM-ag0"/>
+                        </constraints>
+                        <state key="normal" title="Continue">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        </variation>
+                        <connections>
+                            <action selector="continueButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6tb-km-IxO"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="I have read and agree to the" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qj6-vV-8Tf">
+                        <rect key="frame" x="8" y="112" width="135.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        </variation>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5v-P7-SQv">
+                        <rect key="frame" x="147.5" y="106.5" width="105" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="Product Return Policy"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        </variation>
+                        <connections>
+                            <action selector="policyButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UOs-40-V8H"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1Q-v4-T1j" customClass="CheckBox" customModule="Alzahrani" customModuleProvider="target">
+                        <rect key="frame" x="260.5" y="108.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="3Ig-5i-qH4"/>
+                            <constraint firstAttribute="width" constant="20" id="4vk-9Y-qZG"/>
+                            <constraint firstAttribute="width" constant="30" id="6gN-VZ-eaY"/>
+                            <constraint firstAttribute="height" constant="20" id="D9h-I4-xbC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3Ig-5i-qH4"/>
+                                <exclude reference="6gN-VZ-eaY"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="3Ig-5i-qH4"/>
+                                <exclude reference="4vk-9Y-qZG"/>
+                                <include reference="6gN-VZ-eaY"/>
+                                <exclude reference="D9h-I4-xbC"/>
+                            </mask>
+                        </variation>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="QCa-NF-LJL" secondAttribute="trailing" constant="8" id="0zK-h1-5K8"/>
+                    <constraint firstItem="nqT-8a-Cs8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2UO-BT-fhJ"/>
+                    <constraint firstItem="Qj6-vV-8Tf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2tr-Ey-Zcn"/>
+                    <constraint firstItem="o5v-P7-SQv" firstAttribute="centerY" secondItem="Qj6-vV-8Tf" secondAttribute="centerY" id="6bd-xj-sQ1"/>
+                    <constraint firstAttribute="bottom" secondItem="QCa-NF-LJL" secondAttribute="bottom" constant="8" id="8zQ-1z-iAS"/>
+                    <constraint firstItem="l1Q-v4-T1j" firstAttribute="centerY" secondItem="o5v-P7-SQv" secondAttribute="centerY" id="9Gv-Jd-cUJ"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="l1Q-v4-T1j" secondAttribute="trailing" constant="8" id="Ck5-E3-lK5"/>
+                    <constraint firstItem="guJ-u6-jgl" firstAttribute="leading" secondItem="nqT-8a-Cs8" secondAttribute="leading" id="Ehw-dz-j3d"/>
+                    <constraint firstItem="QCa-NF-LJL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="o5v-P7-SQv" secondAttribute="bottom" constant="8" id="Q71-iV-YUl"/>
+                    <constraint firstAttribute="trailing" secondItem="guJ-u6-jgl" secondAttribute="trailing" constant="8" id="VNG-c5-2md"/>
+                    <constraint firstItem="QCa-NF-LJL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="YZD-ih-ed4"/>
+                    <constraint firstItem="nqT-8a-Cs8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="b9F-N8-psv"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nqT-8a-Cs8" secondAttribute="trailing" constant="8" id="dGC-pi-Jcp"/>
+                    <constraint firstItem="Qj6-vV-8Tf" firstAttribute="top" secondItem="guJ-u6-jgl" secondAttribute="bottom" constant="8" id="h8q-NC-PDn"/>
+                    <constraint firstItem="l1Q-v4-T1j" firstAttribute="leading" secondItem="o5v-P7-SQv" secondAttribute="trailing" constant="8" id="iNo-BZ-H1w"/>
+                    <constraint firstItem="o5v-P7-SQv" firstAttribute="leading" secondItem="Qj6-vV-8Tf" secondAttribute="trailing" constant="4" id="lp2-wz-lCa"/>
+                    <constraint firstItem="guJ-u6-jgl" firstAttribute="top" secondItem="nqT-8a-Cs8" secondAttribute="bottom" constant="8" id="ubb-4i-2tV"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Ck5-E3-lK5"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=regular">
+                    <mask key="constraints">
+                        <include reference="Ck5-E3-lK5"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentsTextView" destination="guJ-u6-jgl" id="QIf-87-2v9"/>
+                <outlet property="termsAndConditionsCheckbox" destination="l1Q-v4-T1j" id="gRh-aE-uGc"/>
+            </connections>
+            <point key="canvasLocation" x="70" y="72"/>
+        </tableViewCell>
+    </objects>
+</document>
