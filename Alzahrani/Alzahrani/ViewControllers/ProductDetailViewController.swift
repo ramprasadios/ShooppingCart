@@ -65,17 +65,13 @@ class ProductDetailViewController: UIViewController {
 	@IBOutlet weak var specificationsLabel: UILabel!
 	@IBOutlet weak var star5ImageView: UIImageView!
 	@IBOutlet weak var star1ImageView: UIImageView!
-	
 	@IBOutlet weak var start2ImageView: UIImageView!
-	
 	@IBOutlet weak var star4ImageView: UIImageView!
 	@IBOutlet weak var star3ImageView: UIImageView!
 	@IBOutlet weak var outOfStockEngImageView: UIImageView!
-	
 	@IBOutlet weak var outOfStockArabicImageView: UIImageView!
 	@IBOutlet weak var soldQuantity: UILabel!
 	@IBOutlet weak var reviewsButton: UIButton!
-	
 	@IBOutlet weak var viewMoreButton: UIButton!
 	@IBOutlet weak var containerViewHeightContraint: NSLayoutConstraint!
 	@IBOutlet weak var productSpecificationTableView: UITableView!
@@ -84,7 +80,6 @@ class ProductDetailViewController: UIViewController {
 	@IBOutlet weak var coupanCodeTextField: UITextField!
 	@IBOutlet weak var soldCountLabel: UILabel!
 	@IBOutlet weak var availabilityLabel: UILabel!
-	
 	@IBOutlet weak var productDescription: UILabel!
 	@IBOutlet weak var offerPercentageLabel: UILabel!
 	@IBOutlet weak var productOriginalPriceLabel: UILabel!
@@ -95,13 +90,10 @@ class ProductDetailViewController: UIViewController {
 	@IBOutlet weak var substractButton: UIButton!
 	@IBOutlet weak var productImageView: UIImageView!
 	@IBOutlet weak var productCode: UILabel!
-	
 	@IBOutlet weak var myCartButton: UIButton!
 	@IBOutlet weak var myWishListButton: UIButton!
-	
 	@IBOutlet weak var brandNameTitleLabel: UILabel!
 	@IBOutlet weak var brandNameLabel: UILabel!
-	
 	var actualContainerViewHeight: CGFloat = 0.0
 	var currentProductId: String = ""
 	var noSpecificationViewHeigt: CGFloat = 600.0
